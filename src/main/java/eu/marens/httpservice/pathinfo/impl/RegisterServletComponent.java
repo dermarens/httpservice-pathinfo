@@ -25,8 +25,8 @@ class PathElementServlet extends HttpServlet {
 			throws IOException {
 		rsp.getWriter()
 				.append(String.format(
-						"ServletPath: %s PathInfo: %s RequestURI: %s",
-						rq.getServletPath(), rq.getPathInfo(),
+						"ContextPath: %s ServletPath: %s PathInfo: %s RequestURI: %s",
+						rq.getContextPath() , rq.getServletPath(), rq.getPathInfo(),
 						rq.getRequestURI())).flush();
 	}
 }
